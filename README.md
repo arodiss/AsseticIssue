@@ -8,7 +8,7 @@ This is demonstration of Assetic issue, based on Symfony standard edition.
 + stylesheet contains image with relative path
 + there is CssRewrite filter applied to that stylesheet
 + when running `assetic:dump`, file `web/compiled/foo.css` is generated
-+ generated file contains relative path of image which is messed up: `background-image: url("../../bundles/acmedemo/css/themes/{theme}/images/bg.jpg");`
++ generated file contains relative path of image which is messed up (contains variable): `background-image: url("../../bundles/acmedemo/css/themes/{theme}/images/bg.jpg");`
 
 There's a way to suppress this issue by replacing last line in `\Assetic\Filter\CssRewriteFilter`:
 
