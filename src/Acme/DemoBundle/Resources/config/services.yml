@@ -1,0 +1,3 @@
+services:
+    assetic.value_supplier:
+        class: Acme\DemoBundle\Assetic\ValueSupplier
