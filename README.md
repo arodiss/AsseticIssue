@@ -26,6 +26,8 @@ but this looks rather like hack then like fix
 
 Long story short
 ========================
+```
 composer install
 php app/console assetic:dump
 cat web/compiled/foo.css
+```
